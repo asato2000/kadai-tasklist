@@ -6,7 +6,9 @@ class TasksController < ApplicationController
       @tasks = current_user.tasks
     end
     
-  
+    def show
+    end
+    
     
     def new
         @task = current_user.tasks.build
@@ -24,6 +26,9 @@ class TasksController < ApplicationController
         end
         
     end
+    
+    def edit
+    end    
     
     def update
         
